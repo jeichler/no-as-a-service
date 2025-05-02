@@ -3,12 +3,11 @@ name: build and push
 on:
   push:
     branches:
-      - main
+      - containerize
     paths-ignore:
       - "deployment/**"
       - ".github/worflows/**"
-      - "src/main/docker/Dockerfile"
-      - "src/test/**"
+      - "Containerfile"
       - "README.md"
       - ".gitignore"
       - ".dockerignore"
