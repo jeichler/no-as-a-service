@@ -1,0 +1,16 @@
+---
+
+resources:
+- ../../base
+
+namespace: no-as-a-service
+
+patchesJson6902:
+  - target:
+      version: route.openshift.io/v1
+      kind: Route
+      name: no-as-a-service
+    patch: |-
+      - op: replace
+        path: /spec/host
+        value: no-as-a-service.apps.ocp4.pcfe.net

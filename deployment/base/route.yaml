@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: no-as-a-service
+  annotations:
+    haproxy.router.openshift.io/rewrite-target: /no
+spec:
+  host: no-as-a-service.apps.ocphel.lab-janine.de
+  to:
+    kind: Service
+    name: no-as-a-service
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
