@@ -1,4 +1,6 @@
 ---
+namespace: no-as-a-service
+
 resources:
   - namespace.yaml
   - serviceaccount.yaml
