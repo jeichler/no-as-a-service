@@ -11,6 +11,7 @@ on:
       - "README.md"
       - ".gitignore"
       - ".dockerignore"
+      - "renovate.json"
 
   workflow_dispatch:
   schedule:
