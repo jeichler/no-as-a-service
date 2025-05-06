@@ -1,4 +1,4 @@
-FROM quay.io/fedora/nodejs-22:latest@sha256:64c6f98d043d444a012eb533ae6a6b2de70c5684d919e851f22ad33f608f9835 as builder
+FROM quay.io/fedora/nodejs-22:latest@sha256:6249c5be922e55e6b49d6761d7e1aad22b121c7733036b783e2529e81c6a5ca7 as builder
 USER 0
 ADD . .
 RUN npm install
