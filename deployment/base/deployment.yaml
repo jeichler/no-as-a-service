@@ -28,7 +28,7 @@ spec:
                     app.kubernetes.io/name: no-as-a-service
               weight: 100
       containers:
-      - image: quay.io/jaeichle/no-as-a-service:latest@sha256:f210a0660361641e33cf22da5c9fb97bbfcfecd8decb1ee1ba3dacf5c5bab481
+      - image: quay.io/jaeichle/no-as-a-service:latest@sha256:6085782a22c29f349e1deaa9299aebf470c8cecaf1433193602a32f0b4e83751
         imagePullPolicy: IfNotPresent
         name: naas
         ports:
