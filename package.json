@@ -9,7 +9,7 @@
   "author": "hotheadhacker",
   "license": "MIT",
   "dependencies": {
-    "express": "5.1.0",
+    "express": "5.2.1",
     "express-rate-limit": "7.5.1"
   }
 }
