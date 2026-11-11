@@ -3,6 +3,6 @@ USER 0
 ADD . .
 RUN npm install
 
-FROM quay.io/fedora/nodejs-22-minimal:latest@sha256:815e338440090b0243816268d26f6fd7708b1522ae790ed126b23b895679730e
+FROM quay.io/fedora/nodejs-22-minimal:latest@sha256:041f97e7bf8b23a0abee98196d0b3b64538bb5145e2729efdacf4765a4f7fcf0
 COPY --from=builder $HOME $HOME
 CMD npm run -d start
